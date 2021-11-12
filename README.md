@@ -13,7 +13,12 @@ import {
 	WeexBridge
 } from '[自己的路径]/gcanvas/index.js';
 ```
-3. 获取Canvas context
+3. 添加canvas容器gcanvas标签
+```html
+<gcanvas class="canvas" @touchstart="touchstart" @touchmove="touchmove" @touchend="touchend" ref="gcanvess" fillStyle="#EEEEEE">
+</gcanvas>
+```
+4. 获取Canvas context
 ```javascript
  /*通过元素引用获取canvas对象*/
  var ganvas = this.$refs["gcanvess"];
